@@ -1,2 +1,6 @@
-se escrever apenas python no terminal, voce libera .....
-teste
+Modo interativo
+
+ O interpretador python pode executar em modo que possibilite o desenvolvedor a escrever o código e ver o resultado na hora.
+ Basta ir no terminal e digitar: python
+
+ Utilizar exit() para sair.
