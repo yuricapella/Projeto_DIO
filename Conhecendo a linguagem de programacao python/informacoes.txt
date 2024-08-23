@@ -2,5 +2,17 @@ Modo interativo
 
  O interpretador python pode executar em modo que possibilite o desenvolvedor a escrever o código e ver o resultado na hora.
  Basta ir no terminal e digitar: python
+ Outra forma seria colocar no terminal: python -i nomearquivo.py
+ No caso de um arquivo dentro de uma pasta igual este projeto, a execução ficaria assim:
+ python -i '.\Conhecendo a linguagem de programacao python\tipos_de_dados.py'
+ Por via das dúvidas é bom sempre ir apertando tab para ver se o programa completa com o nome certo.
 
  Utilizar exit() para sair.
+
+
+
+ ---------------
+
+ Dir
+
+ 
