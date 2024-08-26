@@ -47,3 +47,23 @@ Vai mostrando de pouco em pouco caso ficar apertando enter ou apertar espaço pa
 
 Aperta Q pra sair da documentação
 Aperta enter para sair do help e voltar para o modo interativo
+
+--------------------
+Boas práticas
+
+- O padrão de nomes deve ser snake case.
+- Escolher nomes sugestivos.
+- Nome de constantes todo em maiúsculo.
+
+No python não tem como definir uma variável como constante então deve-se colocar a variavel toda maiuscula pois ao menos quem for mexer no código saberá que nao deve alterar.
+
+CAMINHO_ARQUIVO
+
+
+Nomes sugestivos:
+
+taxaJuros
+ou
+taxa_juros #Recomendado usar esse padrão snake case para nomear variaveis no python.
+
+
