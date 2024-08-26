@@ -66,4 +66,26 @@ taxaJuros
 ou
 taxa_juros #Recomendado usar esse padrão snake case para nomear variaveis no python.
 
+--------------------
+Conversão de tipos
+
+Exemplos:
+
+valor = 10 - Automaticamente o python já entende que é tipo INT.
+valor_str = str(valor) - Transforma em string.
+valor_float = float(valor) - Transforma em float.
+
+valor_dois = 10.0  - Automaticamente o  python já entende que é tipo FLOAT.
+valor_int = int(valor_dois) - Transforma em INT.
+
+Para saber que tipo é a variável basta colocar:
+print(type(valor_dois))
+
+Retornará: <class 'float'>
+
+Outro exemplo de conversão seria a divisão:
+
+print (100 / 2) #Divisão retorna FLOAT
+print (100 // 2) #Divisão que retorna o resultado INT mais próximo
+
 
