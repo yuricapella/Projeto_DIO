@@ -89,3 +89,44 @@ print (100 / 2) #Divisão retorna FLOAT
 print (100 // 2) #Divisão que retorna o resultado INT mais próximo
 
 
+------------
+Input e Output
+
+nome = input("Informe o seu nome: ")
+
+Assim que o programa rodar essa variável será solicitado que digite uma informação para o programa armazenar.
+
+Com a função print, podemos verificar no programa o que foi armazenado
+
+print(nome) #Output
+
+Porém há outras formas de printar:
+
+print(nome,end="... \n") #Nesse print sairá "nome..."
+\n serve para caso houver outro print, ele irá ser informado normalmente abaixo deste.
+
+Se não colocar \n o print abaixo irá ser informado junto com este print
+
+print(nome,end="...")
+print(nome)
+
+Resultado: nome...nome
+
+Outro exemplo é utilizar
+print(nome,sep="#")
+
+resultado: nome#
+
+Porém se houver mais variáveis neste print:
+print(nome,sobrenome,idade,sep="#")
+
+O resultado será: nome#sobrenome#idade
+
+Usando tudo junto:
+
+print("Cliente: ",nome,sobrenome,idade, sep="|",end="| essas são as informações do cliente!")
+
+resultado: Cliente: |nome|sobrenome|idade| essas são as informações do cliente!
+
+
+
