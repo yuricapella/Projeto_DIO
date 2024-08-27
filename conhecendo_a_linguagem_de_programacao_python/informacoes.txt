@@ -67,6 +67,32 @@ ou
 taxa_juros #Recomendado usar esse padrão snake case para nomear variaveis no python.
 
 --------------------
+Tipos em Python
+Os tipos built-in são:
+
+Texto
+str
+
+Númerico
+int, float, complex
+
+Sequência
+list, tuple, range
+
+Mapa
+dict
+
+Coleção
+set, fronzenset
+
+Booleano
+bool
+
+Binário
+bytes, bytearray, memoryview
+
+--------------------
+
 Conversão de tipos
 
 Exemplos:
