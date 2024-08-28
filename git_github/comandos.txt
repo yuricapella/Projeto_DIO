@@ -1,0 +1,42 @@
+Criando repositório no github e computador
+
+Adicione um repositório no GitHub e uma pasta no computador com o mesmo nome
+
+Vai no VSCode e em Source Control, o terceiro ícone do canto esquerdo da tela de cima pra baixo.
+
+Clica em Initialize
+
+Após inicializar clica nos 3 pontinhos ali nos menus do source control e vai em show git output
+
+Será aberto la embaixo o passo a passo que o initialize fez mas deve-se clicar na aba terminal
+
+Na aba terminal coloque git remote add origin caminho do GitHub
+
+git remote add origin https://github.com/yuricapella/Projeto_DIO.git
+
+(Como pega o caminho? Na página do projeto tem um botão chamado: < > Code, clicando nele tem a aba Local e em HTTPS está o caminho do Github)
+
+e clica em uma nuvenzinha, se não achar, segue abaixo:
+
+git branch -M main
+
+git push -u origin main
+
+feito isso ele vai mesclar com o GitHub
+
+Após isso se você ir em source control,
+Vai poder escrever a mensagem de alteração do commit e clicar em sync changes e estará encaminhando sem mais delongas para o GitHub.
+
+
+------------------------
+Se apertar . na pagina do projeto no github, abrirá o VSCode web.
+
+git pull endereço_do_projeto
+git pull https://github.com/yuricapella/Projeto_DIO.git
+
+Serve para puxar o código do github para o computador
+
+git push endereço_do_projeto
+git push https://github.com/yuricapella/Projeto_DIO.git
+
+Serve para empurrar o código do computador para o github
