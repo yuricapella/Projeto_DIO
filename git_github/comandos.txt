@@ -35,11 +35,13 @@ git pull endereço_do_projeto
 git pull https://github.com/yuricapella/Projeto_DIO.git
 Se o caminho já estiver configurado só precisa colocar
 git pull
-
+----
 Serve para puxar o código do github para o computador
-
+----
 git add . (Vai pegar tudo que foi alterado no projeto e armazenar para poder registrar)
+----
 git commit -m "mensagem de alteração" (Vai registrar a alteração)
+----
 
 git push endereço_do_projeto
 git push https://github.com/yuricapella/Projeto_DIO.git
@@ -48,3 +50,7 @@ git push
 
 Serve para empurrar o código registrado (pelo commit) do computador para o github
 
+------------------------
+Comandos no terminal
+
+git log (Mostra para qual commit a branch está apontando)
