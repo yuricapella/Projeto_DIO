@@ -13,10 +13,10 @@ Repositório para armazenamento
 
 | Aulas | Resumos |
 |-------|---------|
-|Gravando Alterações no Repositório Local | [Resumos]()
+|Gravando Alterações no Repositório Local | [Resumo]()
 
 ```
 git init
 ```
 
-Apenas o básico para fazer um READ.ME
+Apenas o básico para fazer um README
