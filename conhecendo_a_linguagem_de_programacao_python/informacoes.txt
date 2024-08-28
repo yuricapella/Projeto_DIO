@@ -154,5 +154,3 @@ print("Cliente: ",nome,sobrenome,idade, sep="|",end="| essas são as informaçõ
 
 resultado: Cliente: |nome|sobrenome|idade| essas são as informações do cliente!
 
-
-teste

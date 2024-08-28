@@ -33,10 +33,18 @@ Se apertar . na pagina do projeto no github, abrirá o VSCode web.
 
 git pull endereço_do_projeto
 git pull https://github.com/yuricapella/Projeto_DIO.git
+Se o caminho já estiver configurado só precisa colocar
+git pull
 
 Serve para puxar o código do github para o computador
 
+git add . (Vai pegar tudo que foi alterado no projeto e armazenar para poder registrar)
+git commit -m "mensagem de alteração" (Vai registrar a alteração)
+
 git push endereço_do_projeto
 git push https://github.com/yuricapella/Projeto_DIO.git
+Se o caminho já estiver configurado só precisa colocar
+git push
 
-Serve para empurrar o código do computador para o github
+Serve para empurrar o código registrado (pelo commit) do computador para o github
+
