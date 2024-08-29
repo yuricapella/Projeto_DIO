@@ -73,11 +73,24 @@ ctrl + x para sair
 Para limpar o terminal basta escrever clear
 ---
 
-Para criar uma nova branch basta colocar:
 git checkout -b nomebranch
+Para criar uma nova branch
 
-para voltar a branch main:
 git checkout main
+troca para a branch main
 
 git branch -v
 lista as branchs e os commits para o qual elas apontam
+
+git merge nomebranch
+mescla as duas branchs
+
+exemplo:
+estou na branch main
+git merge teste
+
+isso faz com que as alterações na branch teste sejam transferidas
+para a branch main
+
+
+
