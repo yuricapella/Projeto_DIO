@@ -51,10 +51,21 @@ git push
 Serve para empurrar o código registrado (pelo commit) do computador para o github
 
 ------------------------
-Comandos no terminal
+Comandos no terminal - git bash
 
 git log (Mostra para qual commit a branch está apontando)
 apertar q para sair do git log
 
+
 criar um arquivo:
 echo "#commit-1-branch-main" > commit-1-branch-main.txt
+
+Se por um acaso esquecer de fechar aspas e nao conseguir sair do comando echo,
+apertar ctrl + c
+
+
+Para entrar dentro do txt, usar nano nomearquivo.txt
+
+ctrl + o para salvar e apertar enter para confirmar arquivo
+ctrl + x para sair
+
