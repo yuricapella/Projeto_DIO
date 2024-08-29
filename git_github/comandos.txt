@@ -1,4 +1,72 @@
-Criando repositório no github e computador
+Configurando git na primeira vez
+
+Entre no git bash:
+
+git config --global user.name "Seu Nome"
+configura nome de usuário, recomendado utilizar o mesmo do github
+---
+
+git config --global user.email "seu-email@example.com"
+configura o email, recomendado utilizar o mesmo do github
+
+---
+git config --global --list
+Mostra como a configuração
+---
+
+git init
+inicializar repositorio git
+---
+Caso já houver pasta no github, pode clona-la na pasta local
+
+git clone https://github.com/yuricapella/Projeto_DIO.git
+Clona a pasta e já deixa sincronizado
+---
+Caso não houver nada no repositório do github, utilizar a pasta local e sincronizar
+
+-
+criar pasta no git bash
+mkdir nomedapasta
+-
+
+git remote add origin https://github.com/yuricapella/Projeto_DIO.git
+Sincroniza o repositório local ao repositório remoto
+
+--
+Caso queira verificar onde a pasta está sincronizada:
+git remote -v
+
+---
+Para enviar informações do local ao remoto agora sincronizado:
+
+git add .
+Vai pegar tudo que foi alterado no projeto e armazenar para poder registrar
+---
+
+git commit -m "mensagem de alteração"
+Registra a alteração
+
+git commit —amend -m"nova mensagem"
+modificar mensagem do commit
+---
+
+git push -u origin main
+Serve para empurrar o código registrado (pelo commit) do computador para o github
+---
+
+git pull endereço_do_projeto
+git pull https://github.com/yuricapella/Projeto_DIO.git
+
+Se o caminho já estiver configurado só precisa colocar
+git pull
+Serve para puxar o código do github para o computador
+
+------
+Criando repositório no github e computador (VSCode)
+
+-
+Precisa ter o git config antes desse passo a passo.
+-
 
 Adicione um repositório no GitHub e uma pasta no computador com o mesmo nome
 
@@ -30,25 +98,6 @@ Vai poder escrever a mensagem de alteração do commit e clicar em sync changes 
 
 ------------------------
 Se apertar . na pagina do projeto no github, abrirá o VSCode web.
-
-git pull endereço_do_projeto
-git pull https://github.com/yuricapella/Projeto_DIO.git
-Se o caminho já estiver configurado só precisa colocar
-git pull
-----
-Serve para puxar o código do github para o computador
-----
-git add . (Vai pegar tudo que foi alterado no projeto e armazenar para poder registrar)
-----
-git commit -m "mensagem de alteração" (Vai registrar a alteração)
-----
-
-git push endereço_do_projeto
-git push https://github.com/yuricapella/Projeto_DIO.git
-Se o caminho já estiver configurado só precisa colocar
-git push
-
-Serve para empurrar o código registrado (pelo commit) do computador para o github
 
 ------------------------
 Comandos no terminal - git bash
@@ -147,3 +196,4 @@ para excluir a modificação mais recente e enviar o restante
 git stash apply
 para manter a modificação para uso posterior
 ---
+É um Sistema de Controle de Versão Distribuído gratuito e open-source.
