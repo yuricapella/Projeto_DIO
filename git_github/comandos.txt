@@ -54,3 +54,6 @@ Serve para empurrar o código registrado (pelo commit) do computador para o gith
 Comandos no terminal
 
 git log (Mostra para qual commit a branch está apontando)
+
+criar um arquivo:
+echo "#commit-1-branch-main" > commit-1-branch-main.txt
