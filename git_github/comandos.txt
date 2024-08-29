@@ -78,3 +78,6 @@ git checkout -b nomebranch
 
 para voltar a branch main:
 git checkout main
+
+git branch -v
+lista as branchs e os commits para o qual elas apontam
