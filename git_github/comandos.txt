@@ -115,12 +115,35 @@ o git irá mesclar a informação dos dois commits dentro do arquivo e você dev
 ---
 git fetch origin main
 Serve para trazer o conteudo remoto para a maquina local mas sem usar o merge.
+---
 
 Ja que git pull = git fetch + git merge
+---
 
 git merge origin/main
+---
 
 git diff main (repositório local) origin/main (repositório remoto)
+---
 
 git diff main origin/main
 Aponta o conteúdo diferente que está em cada branch (local/remoto neste caso)
+---
+
+ git clone https://github.com/yuricapella/Projeto_DIO.git --branch teste_github --single-branch
+ Para clonar apenas a branch especifica do repositório remoto
+ ---
+
+---
+git stash
+Caso acontecer de fazer alguma alteração e quiser desfaze-la (deletar um arquivo, etc..)
+
+git stash list
+Mostra oque foi modificado
+
+git stash pop
+para excluir a modificação mais recente e enviar o restante
+
+git stash apply
+para manter a modificação para uso posterior
+---
