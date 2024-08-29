@@ -53,6 +53,10 @@ Serve para empurrar o código registrado (pelo commit) do computador para o gith
 ------------------------
 Comandos no terminal - git bash
 
+git status
+mostra o estado atual do repositório Git
+
+---
 git log (Mostra para qual commit a branch está apontando)
 apertar q para sair do git log
 
@@ -76,21 +80,36 @@ Para limpar o terminal basta escrever clear
 git checkout -b nomebranch
 Para criar uma nova branch
 
+---
 git checkout main
 troca para a branch main
+---
 
 git branch -v
 lista as branchs e os commits para o qual elas apontam
 
+---
 git merge nomebranch
 mescla as duas branchs
 
+---
 exemplo:
 estou na branch main
 git merge teste
 
 isso faz com que as alterações na branch teste sejam transferidas
 para a branch main
+---
 
+
+----------------
+Conflito
+
+Um conflito se da quando há dois commits para um mesmo arquivo
+sempre aparecerá uma mensagem de erro explicando oque aconteceu
+
+o jeito de resolver é usar git pull origin main / branch que tiver sendo utilizada
+
+o git irá mesclar a informação dos dois commits dentro do arquivo e você deve alterar o arquivo e deixar oque tem que estar e dar outro commit.
 
 
