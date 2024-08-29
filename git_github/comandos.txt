@@ -112,4 +112,15 @@ o jeito de resolver é usar git pull origin main / branch que tiver sendo utiliz
 
 o git irá mesclar a informação dos dois commits dentro do arquivo e você deve alterar o arquivo e deixar oque tem que estar e dar outro commit.
 
+---
+git fetch origin main
+Serve para trazer o conteudo remoto para a maquina local mas sem usar o merge.
 
+Ja que git pull = git fetch + git merge
+
+git merge origin/main
+
+git diff main (repositório local) origin/main (repositório remoto)
+
+git diff main origin/main
+Aponta o conteúdo diferente que está em cada branch (local/remoto neste caso)
