@@ -1,0 +1,13 @@
+A Importância dos Desafios de Projeto na Prática
+
+Fork no github geralmente é uma alternativa para ter uma base de projeto para poder evoluir ele.
+
+Utilizei fork para clonar um repositório remoto ao meu usuário no github dio-lab-open-source
+
+Nele realizarei um projeto de criar um arquivo Markdown.
+
+projeto open-source
+https://github.com/digitalinnovationone/dio-lab-open-source
+
+meu repositório:
+https://github.com/yuricapella/dio-lab-open-source
