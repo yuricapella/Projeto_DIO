@@ -12,9 +12,23 @@ divisão: print(12 / 3) = 4.0 (float)
 
 divisão inteira: print(12 // 2) = 6 (int)
 
+exponenciação: print(2 ** 3) = 8 (2³)
+
 módulo: print(10 % 3) = 1 (resto da divisão)
 
-exponenciação: print(2 ** 3) = 8 (2³)
+outro exemplo:
+7 % 2 = 1
+Dois cabe em sete três vezes e resta um.
+
+Um uso comum para o operador modulo é encontrar números pares ou ímpares.
+saldo != 0 é impar, saldo == 0 é par
+
+
+for i in range(1,10):
+  if(i % 2 == 0):
+    print(i)
+
+
 
 Na matemática existe uma regra que indica quais operações
 devem ser executadas primeiro. Isso é útil pois ao analisar uma

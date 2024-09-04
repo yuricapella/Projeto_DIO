@@ -1,0 +1,24 @@
+Atribuição simples
+saldo = 500
+
+Atribuição com adição
+saldo += 200
+
+Atribuição com subtração
+saldo -= 200
+
+Atribuição com multiplicação
+saldo *= 2
+
+Atribuição com divisão
+saldo /= 2
+
+divisão inteira
+saldo //=2
+
+exponenciação
+saldo **= 4
+
+modulo (restante da divisão)
+saldo %= 4
+
