@@ -1,0 +1,13 @@
+São operadores utilizados para comparar dois valores.
+
+saldo = 400
+saque = 200
+
+print(saldo == saque) = False (identico, igual, o mesmo valor)
+print(saldo != saque) = True (diferente)
+
+print(saldo > saque) = True (Maior que)
+print(saldo >= saque) = True (Maior ou igual)
+
+print(saldo < saque) = False (Menor que)
+print(saldo <= saque) = False (Menor ou igual)
