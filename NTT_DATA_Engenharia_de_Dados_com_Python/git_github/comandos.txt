@@ -1,0 +1,199 @@
+Configurando git na primeira vez
+
+Entre no git bash:
+
+git config --global user.name "Seu Nome"
+configura nome de usuário, recomendado utilizar o mesmo do github
+---
+
+git config --global user.email "seu-email@example.com"
+configura o email, recomendado utilizar o mesmo do github
+
+---
+git config --global --list
+Mostra como a configuração
+---
+
+git init
+inicializar repositorio git
+---
+Caso já houver pasta no github, pode clona-la na pasta local
+
+git clone https://github.com/yuricapella/Projeto_DIO.git
+Clona a pasta e já deixa sincronizado
+---
+Caso não houver nada no repositório do github, utilizar a pasta local e sincronizar
+
+-
+criar pasta no git bash
+mkdir nomedapasta
+-
+
+git remote add origin https://github.com/yuricapella/Projeto_DIO.git
+Sincroniza o repositório local ao repositório remoto
+
+--
+Caso queira verificar onde a pasta está sincronizada:
+git remote -v
+
+---
+Para enviar informações do local ao remoto agora sincronizado:
+
+git add .
+Vai pegar tudo que foi alterado no projeto e armazenar para poder registrar
+---
+
+git commit -m "mensagem de alteração"
+Registra a alteração
+
+git commit —amend -m"nova mensagem"
+modificar mensagem do commit
+---
+
+git push -u origin main
+Serve para empurrar o código registrado (pelo commit) do computador para o github
+---
+
+git pull endereço_do_projeto
+git pull https://github.com/yuricapella/Projeto_DIO.git
+
+Se o caminho já estiver configurado só precisa colocar
+git pull
+Serve para puxar o código do github para o computador
+
+------
+Criando repositório no github e computador (VSCode)
+
+-
+Precisa ter o git config antes desse passo a passo.
+-
+
+Adicione um repositório no GitHub e uma pasta no computador com o mesmo nome
+
+Vai no VSCode e em Source Control, o terceiro ícone do canto esquerdo da tela de cima pra baixo.
+
+Clica em Initialize
+
+Após inicializar clica nos 3 pontinhos ali nos menus do source control e vai em show git output
+
+Será aberto la embaixo o passo a passo que o initialize fez mas deve-se clicar na aba terminal
+
+Na aba terminal coloque git remote add origin caminho do GitHub
+
+git remote add origin https://github.com/yuricapella/Projeto_DIO.git
+
+(Como pega o caminho? Na página do projeto tem um botão chamado: < > Code, clicando nele tem a aba Local e em HTTPS está o caminho do Github)
+
+e clica em uma nuvenzinha, se não achar, segue abaixo:
+
+git branch -M main
+
+git push -u origin main
+
+feito isso ele vai mesclar com o GitHub
+
+Após isso se você ir em source control,
+Vai poder escrever a mensagem de alteração do commit e clicar em sync changes e estará encaminhando sem mais delongas para o GitHub.
+
+
+------------------------
+Se apertar . na pagina do projeto no github, abrirá o VSCode web.
+
+------------------------
+Comandos no terminal - git bash
+
+git status
+mostra o estado atual do repositório Git
+
+---
+git log (Mostra para qual commit a branch está apontando)
+apertar q para sair do git log
+
+---
+criar um arquivo:
+echo "#commit-1-branch-main" > commit-1-branch-main.txt
+
+Se por um acaso esquecer de fechar aspas e nao conseguir sair do comando echo,
+apertar ctrl + c
+---
+
+Para entrar dentro do txt, usar nano nomearquivo.txt
+
+ctrl + o para salvar e apertar enter para confirmar arquivo
+ctrl + x para sair
+
+---
+Para limpar o terminal basta escrever clear
+---
+
+git checkout -b nomebranch
+Para criar uma nova branch
+
+---
+git checkout main
+troca para a branch main
+---
+
+git branch -v
+lista as branchs e os commits para o qual elas apontam
+
+---
+git merge nomebranch
+mescla as duas branchs
+
+---
+exemplo:
+estou na branch main
+git merge teste
+
+isso faz com que as alterações na branch teste sejam transferidas
+para a branch main
+---
+
+
+----------------
+Conflito
+
+Um conflito se da quando há dois commits para um mesmo arquivo
+sempre aparecerá uma mensagem de erro explicando oque aconteceu
+
+o jeito de resolver é usar git pull origin main / branch que tiver sendo utilizada
+
+o git irá mesclar a informação dos dois commits dentro do arquivo e você deve alterar o arquivo e deixar oque tem que estar e dar outro commit.
+
+---
+git fetch origin main
+Serve para trazer o conteudo remoto para a maquina local mas sem usar o merge.
+---
+
+Ja que git pull = git fetch + git merge
+---
+
+git merge origin/main
+---
+
+git diff main (repositório local) origin/main (repositório remoto)
+---
+
+git diff main origin/main
+Aponta o conteúdo diferente que está em cada branch (local/remoto neste caso)
+---
+
+ git clone https://github.com/yuricapella/Projeto_DIO.git --branch teste_github --single-branch
+ Para clonar apenas a branch especifica do repositório remoto
+ ---
+
+---
+git stash
+Caso acontecer de fazer alguma alteração e quiser desfaze-la (deletar um arquivo, etc..)
+
+git stash list
+Mostra oque foi modificado
+
+git stash pop
+para excluir a modificação mais recente e enviar o restante
+
+git stash apply
+para manter a modificação para uso posterior
+---
+É um Sistema de Controle de Versão Distribuído gratuito e open-source.
