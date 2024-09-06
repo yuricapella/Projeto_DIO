@@ -1,0 +1,59 @@
+São operadores utilizados em conjunto com os operadores de
+comparação, para montar uma expressão lógica. Quando um
+operador de comparação é utilizado, o resultado retornado é
+um booleano, dessa forma podemos combinar operadores de
+comparação com os operadores lógicos, exemplo:
+op_comparacao + op_logico + op_comparacao... N . ..
+
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque
+true
+
+saque <= limite
+false
+
+---------------
+Operador and (As duas condições precisam ser TRUE)
+
+saldo >= saque and saque <= limite  (saldo maior ou igual a saque e saque menor ou igual a limite)
+false
+
+
+---------------
+Operador or (Uma das duas condições precisam ser TRUE)
+
+saldo >= saque or saque <= limite   (saldo maior ou igual a saque ou saque menor ou igual a limite)
+
+saldo é maior que saque então,
+true
+
+---------------
+Operador not (Inverte o resultado, se for FALSE, fica TRUE)
+
+not saque > limite (saque maior que limite = true mas se tem o not fica false)
+false
+
+contatos_emergencia = []
+
+not contatos_emergencia (como a lista está vazia ela deve retornar false porém com o not retorna true)
+true
+
+---------------
+Parênteses
+Serve para delimitar oque vai executar primeiro da esquerda para direita
+
+saldo = 1000
+saque = 200
+limite = 100
+conta_especial = True
+
+saldo >= saque and saque <= limite or conta_especial and saldo >= saque
+True
+
+(saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque)
+True
+
+
