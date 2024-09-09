@@ -1,0 +1,22 @@
+curso = "Curso de Python"
+
+frutas = ["laranja", "uva", "limão"]
+ 
+saques = [1500, 100]
+
+"Python" in curso
+True
+"Python" not in curso
+False
+
+"maçã" not in frutas
+True
+"maçã" in frutas
+False
+
+200 in saques
+False
+200 not in saques
+True
+
+Utiliza-se in para saber se está e not in para saber se não está
