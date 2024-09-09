@@ -197,3 +197,10 @@ git stash apply
 para manter a modificação para uso posterior
 ---
 É um Sistema de Controle de Versão Distribuído gratuito e open-source.
+
+---
+git commit --amend
+Para alterar o ultimo commit feito
+Usar as setas do teclado para mexer no editor e ir na linha que possui ~, pois as linhas com # são ignoradas
+Após fazer o comentário, apertar esc e coloque :wq (write and quit)
+Caso não queira fazer o ammend, aperta esc e coloque :q!
